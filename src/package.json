@@ -1,13 +1,15 @@
 {
-  "name": "hello_world",
+  "name": "chapel-runners",
   "version": "1.0.0",
-  "description": "hello world sample for NodeJS",
-  "main": "app.js",
-  "repository": "https://github.com/aws/aws-sam-cli-app-templates/tree/master/nodejs18.x/hello-ts-pt",
-  "author": "SAM CLI",
+  "description": "App for the Chapel Runners",
+  "main": "src/functions/hello-world/app.js",
+  "repository": "https://github.com/phoebelord/chapel_runners/tree/main",
+  "author": "Phoebe Lord",
   "license": "MIT",
   "dependencies": {
     "@aws-lambda-powertools/logger": "^1.5.1",
+    "@aws-lambda-powertools/parameters": "^1.14.0",
+    "@aws-sdk/client-secrets-manager": "^3.423.0",
     "esbuild": "^0.17.6"
   },
   "scripts": {
