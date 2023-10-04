@@ -117,7 +117,9 @@ jobs:
           use-installer: true
 
       - name: Build resources
-        run: sam build --template ${SAM_TEMPLATE} --use-container
+        run: |
+          npm install -g esbuild
+          sam build --template ${SAM_TEMPLATE}
 
       - name: Assume the testing pipeline user role
         uses: aws-actions/configure-aws-credentials@v1-node16
@@ -237,6 +239,7 @@ jobs:
 
       - name: Deploy to production account
         run: |
+          cd src && npm install -g esbuild && cd ..
           sam deploy --stack-name ${PROD_STACK_NAME} \
             --template packaged-prod.yaml \
             --capabilities CAPABILITY_IAM \
