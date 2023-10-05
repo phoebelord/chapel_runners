@@ -2,7 +2,7 @@
   "name": "chapel-runners",
   "version": "1.0.0",
   "description": "App for the Chapel Runners",
-  "main": "src/functions/hello-world/app.js",
+  "main": "src/app.js",
   "repository": "https://github.com/phoebelord/chapel_runners/tree/main",
   "author": "Phoebe Lord",
   "license": "MIT",

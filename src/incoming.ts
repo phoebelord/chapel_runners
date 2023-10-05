@@ -1,6 +1,6 @@
 import { APIGatewayProxyEvent, APIGatewayProxyResult, Context } from 'aws-lambda';
 import { Logger } from '@aws-lambda-powertools/logger';
-import { WebhookEvent } from '../../types';
+import { WebhookEvent } from '../types';
 const logger = new Logger();
 
 /**
